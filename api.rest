@@ -1,0 +1,26 @@
+get http://localhost:3002/ressources
+
+###
+
+get http://localhost:3002/ressources/fdsiiis
+
+###
+post http://localhost:3002/ressources
+content-type: application/json
+
+{
+    "title":"test ressource",
+    "url": "http://google.com"
+}
+
+###
+delete http://localhost:3002/ressources/joZzUiD
+
+###
+post http://localhost:3002/signin
+content-type: application/json
+
+{
+    "email":"admin@gmail.com",
+    "password": "12345"
+}
